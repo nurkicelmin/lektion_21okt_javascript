@@ -60,34 +60,3 @@ popList();
 
 
 
-/* Create a new function with new items */
-
-
-const body = document.querySelector('body')
-
-
-const div = document.createElement('div');
-div.classList.add('container')
-
-const ul = document.createElement('ul');
-
-
-
-const li1 = document.createElement('li');
-const li2 = document.createElement('li');
-const li3 = document.createElement('li');
-
-
-li1.appendChild(document.createTextNode('Red Bull'))
-li2.appendChild(document.createTextNode('Monster'))
-li3.appendChild(document.createTextNode('Nocco'))
-
-
-div.appendChild(ul)
-ul.appendChild(li1)
-ul.appendChild(li2)
-ul.appendChild(li3)
-
-body.appendChild(div)
-
-console.log(div)
